@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background-color: #FEAFC3;
+}
+
+header {
+  display: flex;
+  width: 1170px;
+  height: 104px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  width: 422px;
+  height: 36px;
+}
+
+.header-items {
+  margin-left: auto;
+}
