@@ -1,12 +1,17 @@
 body {
   margin: 0;
   background-color: #FEAFC3;
+  padding: 0 98px 0 98px;
 }
 
 header {
   display: flex;
   width: 1170px;
   height: 104px;
+}
+
+.header-search {
+  display: hidden;
 }
 
 .navigation {
@@ -19,6 +24,176 @@ header {
   height: 36px;
 }
 
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  text-decoration: none;
+}
+
 .header-items {
   margin-left: auto;
+}
+
+section {
+  margin-bottom: 80px;
+  margin-top: 0;
+}
+
+.slider {
+  display: flex;
+  max-width: 1170px;
+  justify-content: center;
+
+}
+
+.slider-socitems {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slider-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  justify-content: center;
+  margin-left: 70px;
+}
+
+.slider-info button {
+  padding: 12px 32px;
+
+width: 139px;
+height: 44px;
+}
+
+.slide-selected {
+  width: 327px;
+  height: 507px;
+}
+
+.slide {
+  width: 66px;
+  height: 150px;
+
+}
+
+.banners h2{
+text-align: center;
+font-size: 32px;
+}
+
+.banners-wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.banner {
+  display: flex;
+  width: 570px;
+  height: 268px;
+
+  background-color: #FF7799;
+  border-radius: 16px;
+}
+
+.gift-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 317px;
+  height: 196px;
+  margin: 36px auto 36px 36px;
+}
+
+.banner img {
+  width: 219px;
+  height: 268px;
+
+  align-self: flex-end;
+}
+
+.banner-button {
+width: 176px;
+height: 44px;
+padding: 12px 32px 12px 32px;
+}
+
+.products h2 {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 900;
+font-size: 32px;
+line-height: 46px;
+  text-align: center;
+  padding-bottom: 107px;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.product-card {
+  position: relative;
+  height: 281px;
+  width: 270px;
+
+  background: #FCFCFC;
+  border-radius: 8px;
+}
+
+.product-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px;
+
+  margin: 133px 24px 40px 24px;
+
+  width: 190px;
+  height: 124px;
+}
+
+.product-card img {
+  order: -1;
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  left: 51px;
+  top: -50px;
+}
+
+.ceo {
+  width: 1170px;
+  background-image: url("media/ceo-background.png");
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.ceo-wrapper {
+  background-color: #FCFCFC;
+  width: 1122px;
+  height: 432px;
+  padding: 56px 40px;
+}
+
+.ceo-wrapper h2 {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.ceo-content-wrapper {
+
+}
+
+.button {
+font-size: 16px;
+font-style: bold;
+background-color: #FCFCFC;
+border: 4px rgba(252, 252, 252, 0.1) solid;
+border-radius: 26px;
 }

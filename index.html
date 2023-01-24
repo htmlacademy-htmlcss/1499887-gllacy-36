@@ -10,15 +10,19 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <img class="logo" src="media/logo.svg"/>
+      <a class="logo"><img src="media/logo.svg"/></a>
       <nav class="navigation">
-        <a class="nav-link">Каталог</a>
-        <a class="nav-link">Доставка и оплата</a>
-        <a class="nav-link">О компании</a>
+        <ul>
+        <li><a class="nav-link">Каталог</a></li>
+        <li><a class="nav-link">Доставка и оплата</a></li>
+        <li><a class="nav-link">О компании</a></li>
+        </ul>
       </nav>
 
       <div class="header-items">
-        <p class="nav-phone"></p>
+        <b class="nav-phone">+7 800 555-86-28</b>
+        <input class="header-search">
+        <button class="search-button"></button>
         <a class="nav-link log_in">Вход</a>
         <a class="nav-link cart">Корзина</a>
       </div>
@@ -28,9 +32,9 @@
     <main>
     <section class="slider">
       <div class="slider-info">
-      <h2>Нежный пломбир с клубничным джемом</h2>
+      <h2>Нежный пломбир <br> с клубничным джемом</h2>
       <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи. </p>
-      <button>Заказать</button>
+      <button class="button slider-button">Заказать</button>
       </div>
 
       <div class="slides">
@@ -47,62 +51,92 @@
     </section>
 
     <section class="banners">
-      <h2>Заказывайте мороженое и получайте подарки!</h2>
+      <h2>Заказывайте мороженое <br> и получайте подарки!</h2>
 
-      <div class="gift">
+      <div class="banners-wrapper">
+
+      <div class="banner">
+        <div class="gift-wrapper">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button>Хочу подарок</button>
+        <button class="button banner-button">Хочу подарок</button>
+        </div>
+
         <img class="gift-image" src="media/Raspberry.png">
       </div>
 
-      <div class="gift">
+      <div class="banner">
+        <div class="gift-wrapper">
         <h3>Маршмеллоу даром!</h3>
         <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-        <button>Хочу подарок</button>
+        <button class="button banner-button">Хочу подарок</button>
+        </div>
+
         <img class="gift-image" src="media/marshmallow.png">
       </div>
+
+    </div>
     </section>
 
     <section class="products">
-      <h2>Попробуйте самые популярные вкусы нашего мороженого</h2>
+      <h2>Попробуйте самые популярные<br>вкусы нашего мороженого</h2>
 
+      <div class="cards-wrapper">
       <div class="product-card">
+        <img src="media/pdoduct-1.png" >
+        <div class="product-info-wrapper">
         <h4>Малинка</h4>
-        <img src="media/pdoduct-1.png">
         <p>Сливочное мороженое с малиновым джемом</p>
-        <strong>310 ₽/кг</strong>
+        <div class="price-and-button">
+        <strong>310 ₽<span class="kilogramms">/кг</span></strong>
         <button class="add-to-cart"></button>
+      </div>
+      </div>
       </div>
 
       <div class="product-card">
-        <h4>Фисташка</h4>
         <img src="media/product-2.png">
+        <div class="product-info-wrapper">
+          <h4>Фисташка</h4>
         <p>Фисташковый пломбир с кусочками шоколада</p>
-        <strong>340 ₽/кг</strong>
+        <div class="price-and-button">
+        <strong>340 ₽<span class="kilogramms">/кг</span></strong>
         <button class="add-to-cart"></button>
+        </div>
+        </div>
       </div>
 
       <div class="product-card">
-        <h4>Черника</h4>
         <img src="media/product-3.png">
+        <div class="product-info-wrapper">
+          <h4>Черника</h4>
         <p>Крем-брюле с черничным джемом</p>
-        <strong>330 ₽/кг</strong>
+        <div class="price-and-button">
+        <strong>330 ₽<span class="kilogramms">/кг</span></strong>
         <button class="add-to-cart"></button>
+        </div>
+      </div>
       </div>
 
       <div class="product-card">
-        <h4>Бабл-гам</h4>
         <img src="media/product-4.png">
+        <div class="product-info-wrapper">
+        <h4>Бабл-гам</h4>
         <p>Ванильный пломбир со сладкой посыпкой</p>
-        <strong>320 ₽/кг</strong>
+        <div class="price-and-button">
+        <strong>320 ₽<span class="kilogramms">/кг</span></strong>
         <button class="add-to-cart"></button>
       </div>
+      </div>
+    </div>
 
     </section>
 
     <section class="ceo">
-      <h2>Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
+      <div class="ceo-wrapper">
+      <h2>Магазин Глейси – это онлайн и офлайн-магазин по продаже <br> мороженого собственного производства на развес</h2>
+
+      <div class="ceo-content-wrapper">
 
       <p>Всё наше мороженое изготавливается на собственном производстве
         с использованием современного оборудования и проверенных временем технологий.</p>
@@ -116,13 +150,15 @@
 
       <p>Доставка нашего мороженого осуществляется в специальном термопаке,
         который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+      </div>
+      </div>
     </section>
 
     <div class="blog">
 
       <aside class="news">
-        <h3>10 способов сервировки фруктовых щербетов
-          к столу</h3>
+        <a>10 способов сервировки фруктовых щербетов
+          к столу</a>
         <p>Новое в нашем блоге</p>
         <img>
       </aside>
