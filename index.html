@@ -10,21 +10,21 @@
   <body>
     <!-- Шапка сайта -->
     <header class="header">
-      <a class="logo"><img src="media/logo.svg"/></a>
+      <a class="logo" href="#"><img src="media/logo.svg"/></a>
       <nav class="navigation">
         <ul>
-        <li><a class="nav-link">Каталог</a></li>
-        <li><a class="nav-link">Доставка и оплата</a></li>
-        <li><a class="nav-link">О компании</a></li>
+        <li><a class="nav-link" href="catalog.html">Каталог</a></li>
+        <li><a class="nav-link" href="#">Доставка и оплата</a></li>
+        <li><a class="nav-link" href="#">О компании</a></li>
         </ul>
       </nav>
 
       <div class="header-items">
         <b class="nav-phone">+7 800 555-86-28</b>
         <input class="header-search">
-        <button class="search-button"></button>
-        <a class="nav-link log_in">Вход</a>
-        <a class="nav-link cart">Корзина</a>
+        <button class="search-button" href="#">Заказать</button>
+        <a class="nav-link log_in" href="#">Вход</a>
+        <a class="nav-link cart" href="#">Корзина</a>
       </div>
     </header>
 
@@ -38,9 +38,9 @@
       </div>
 
       <div class="slides">
-      <img class="slide-selected" src="media/Ice cream/with jam.png">
-      <img class="slide" src="media/Ice cream/banana flavour.png">
-      <img class="slide" src="media/Ice cream/with marshmallow.png">
+      <img class="slide-selected" src="media/IceСream/with jam.png">
+      <img class="slide" src="media/IceСream/banana flavour.png">
+      <img class="slide" src="media/IceСream/with marshmallow.png">
       </div>
 
       <div class="slider-soceitems">
@@ -209,22 +209,24 @@
 
     <!-- Подвал сайта -->
     <footer class="footer">
+      <div class="footer-wrapper">
       <section class="footer-soceitems">
-        <img src="media/contacts/telegram.svg">
-        <img src="media/contacts/vk.svg">
-        <img src="media/contacts/socitem.svg">
+        <a class="footer-soceitems-link" href="https://t.me/htmlacademy"><img src="media/contacts/telegram.svg"></a>
+        <a class="footer-soceitems-link" href="https://vk.com/htmlacademy"><img src="media/contacts/vk.svg"></a>
+        <a class="footer-soceitems-link" href="https://www.youtube.com/user/htmlacademyru"><img src="media/contacts/socitem.svg"></a>
       </section>
 
       <section class="footer-nav">
-        <a class="">Для поставщиков</a>
-        <a>Наши документы</a>
-        <a>О производстве</a>
-        <a>Экологические стандарты</a>
+        <a class="footer-nav-link" href="#">Для поставщиков</a>
+        <a class="footer-nav-link" href="#">Наши документы</a>
+        <a class="footer-nav-link" href="#">О производстве</a>
+        <a class="footer-nav-link" href="#">Экологические стандарты</a>
       </section>
 
       <section class="copyright">
         <img src="media/copyright.svg">
       </section>
+    </div>
     </footer>
 
   </body>

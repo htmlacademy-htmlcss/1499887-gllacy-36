@@ -11,7 +11,7 @@ header {
 }
 
 .header-search {
-  display: hidden;
+  visibility: hidden;
 }
 
 .navigation {
@@ -33,6 +33,14 @@ header {
 .header-items {
   margin-left: auto;
 }
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 1170px;
+  justify-content: space-evenly;
+}
+
 
 section {
   margin-bottom: 80px;
@@ -150,7 +158,7 @@ line-height: 46px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  padding: 0px;
+  padding: 0;
 
   margin: 133px 24px 40px 24px;
 
@@ -196,4 +204,16 @@ font-style: bold;
 background-color: #FCFCFC;
 border: 4px rgba(252, 252, 252, 0.1) solid;
 border-radius: 26px;
+}
+
+.catalog-products-list{
+  max-width: 1170px;
+}
+
+.products-list-wrapper {
+display: flex;
+justify-content: center;
+gap: 91px 30px;
+flex-wrap: wrap;
+width: 100%;
 }
