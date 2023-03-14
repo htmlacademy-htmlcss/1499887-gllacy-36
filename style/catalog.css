@@ -1,0 +1,70 @@
+/* ------------------ Стили каталога ------------------*/
+
+.catalog-products-list {
+  max-width: 1170px;
+}
+
+.products-list-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 91px 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.breadcrumb-list {
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+}
+
+.breadcrumb-item {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.breadcrumb-item::after {
+  content: url(../media/catalog/chevrons-right.svg);
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.catalog-form {
+  max-width: 825px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-pages-list {
+  display: flex;
+  gap: 340px;
+  justify-content: flex-end;
+}
+
+.pager-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.pager-item {
+  width: 24px;
+  height: 24px;
+  text-align: center;
+}
+
+.pager-item-selected {
+  border-radius: 100%;
+  background-color: #FCFCFC;
+}
+
+.catalog-list-extend {
+  padding: 12px 32px;
+
+  width: 179px;
+  height: 44px;
+}
