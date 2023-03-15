@@ -102,7 +102,7 @@
     </header>
 
     <main class="catalog-main">
-
+      <div class="filter-content">
       <section class="breadcrumb">
         <ul class="breadcrumb-list">
           <li><a class="breadcrumb-item">Главная</a></li>
@@ -118,30 +118,39 @@
 
           <div class="catalog-filter-item">
             <p>Сортировка:</p>
-            <select form="catalog-filter">
+            <select class="catalog-filter" form="catalog-filter">
               <option>по популярности</option>
             </select>
           </div>
 
           <div class="catalog-filter-item">
             <p>Цена: 100 ₽ – 500 ₽</p>
-            <input type="range" min="100" max="100" value="500" class="price-slider">
+            <div class="range-controls">
+              <div class="scale"><div style="margin-left:10px;width:150px;" class="bar"></div></div>
+              <div class="toggle min-toggle" style="left:40px;"></div>
+              <div class="toggle max-toggle" style="left:180px;"></div>
+          </div>
           </div>
 
           <div class="catalog-filter-item">
+            
             <p>Жирность:</p>
-            <input type="radio" value="0%" id="fat-content_0">
-            <label for="fat-content_0">0%</label>
-            <input type="radio" value="до 10%" id="fat-content_1">
-            <label for="fat-content_1">до 10%</label>
-            <input type="radio" value="до 30%" id="fat-content_2">
-            <label for="fat-content_2">до 30%</label>
-            <input type="radio" value="выше 30%" id="fat-content_3">
-            <label for="fat-content_3">выше 30%</label>
+            <div class="radio-block">
+              <input type="radio" value="0%" id="fat-content_0">
+              <label for="fat-content_0">0%</label>
+              <input type="radio" value="до 10%" id="fat-content_1">
+              <label for="fat-content_1">до 10%</label>
+              <input type="radio" value="до 30%" id="fat-content_2">
+              <label for="fat-content_2">до 30%</label>
+              <input type="radio" value="выше 30%" id="fat-content_3">
+              <label for="fat-content_3">выше 30%</label>
+            </div>
+           
           </div>
 
           <div class="catalog-filter-item">
             <p>Наполнители:</p>
+            <div class="checkbox-block">
             <input type="checkbox" value="шоколадные" id="catalog-checkbox_1">
             <label for="catalog-checkbox_1">шоколадные</label>
             <input type="checkbox" value="сахарные посыпки" id="catalog-checkbox_2">
@@ -152,11 +161,13 @@
             <label for="catalog-checkbox_4">сиропы</label>
             <input type="checkbox" value="джемы" id="catalog-checkbox_5">
             <label for="catalog-checkbox_5">джемы</label>
+            </div>
           </div>
 
           <button class="button catalog-filter-submit">Применить</button>
         </form>
       </section>
+    </div>
 
       <section class="catalog-products-list">
 

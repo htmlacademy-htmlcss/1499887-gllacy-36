@@ -11,16 +11,23 @@
   flex-wrap: wrap;
   width: 100%;
 }
+.filter-content{
+  width: 100%;
+  max-width: 1171px;
+}
+.breadcrumb{
+  margin-bottom:16px;
+}
 
 .breadcrumb-list {
   display: flex;
   list-style-type: none;
   gap: 8px;
+ 
 }
 
 .breadcrumb-item {
-  font-family: 'Inter';
-  font-style: normal;
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -30,31 +37,87 @@
 .breadcrumb-item::after {
   content: url(../media/catalog/chevrons-right.svg);
   margin-left: 8px;
-  margin-top: 8px;
+  margin-top: 2px;
+  display: block;
 }
-
+.catalog-header{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  margin-bottom: 40px;
+  color: #2D3440;
+}
 .catalog-form {
   max-width: 825px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
-
+.catalog-filter{
+  background: #fcfcfc69;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2D3440;
+    padding: 8px 11px;
+    border: none;
+}
+.catalog-filter-item{
+  margin: 0 0 20px 0; 
+}
+.catalog-filter-item > p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  margin: 0px 0px 8px 15px;
+}
 .catalog-pages-list {
   display: flex;
   gap: 340px;
   justify-content: flex-end;
 }
-
+.checkbox-block, .radio-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #fcfcfc69;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  padding: 8px 16px;
+}
+.checkbox-block >input , .radio-block > input{
+  height: 20px;
+  accent-color: #2d3440;
+}
 .pager-list {
   display: flex;
   list-style-type: none;
   align-items: center;
+}
+.catalog-filter-submit{
+  margin: 28px 0px 0px 16px;
+    height: 36px;
+    padding: 2px 36px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 2px solid #fff;
+    background: #fdcfdb;
 }
 
 .pager-item {
   width: 24px;
   height: 24px;
   text-align: center;
+  padding: 4px;
+}
+.pager-button{
+  padding: 4px 0 0 0;
 }
 
 .pager-item-selected {
@@ -64,7 +127,42 @@
 
 .catalog-list-extend {
   padding: 12px 32px;
-
-  width: 179px;
-  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: 5px solid #ff4a783b;
+}
+.range-controls{
+  position: relative;
+    height: 36px;
+    padding: 0 30px;
+    background: #fcfcfc69;
+    border-radius: 23px;
+    overflow: hidden;
+}
+.scale{
+  margin-top: 18px;
+    height: 2px;
+    background: #d7dcde;
+}
+.bar{
+  height: 2px;
+  background: #2d344094;
+}
+.toggle{
+  position: absolute;
+    top: 12px;
+    left: 30px;
+    width: 4px;
+    height: 4px;
+    border: 8px solid #2d3440;
+    background: #ababab;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.min-toggle{
+  left:70px;
+}
+.max-toggle{
+  left:165px;
 }
